@@ -3,7 +3,6 @@
 var express = require('express'),
     session = require('express-session'),
     errorhandler = require('errorhandler'),
-    //bodyParser = require('body-parser'),
     cors = require('cors');
 
 var app = express();

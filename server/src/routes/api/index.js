@@ -2,6 +2,8 @@
 
 var router = require('express').Router();
 
-router.use('/', require('./auth'));
+router.use('/auth', require('./auth'));
+router.use('/source', require('./source'));
+router.use('/newssource', require('./newssource'));
 
 module.exports = router;

@@ -1,8 +1,10 @@
 {
   "users": [
     {
-      "username": "username1",
-      "password": "password"
+      "username": "",
+      "password": "",
+      "sources": [],
+      "saved": []
     }
   ]
 }
