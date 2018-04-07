@@ -1,0 +1,19 @@
+{
+  "name": "polis-backend",
+  "version": "1.0.0",
+  "description": "API for backend",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\""
+  },
+  "author": "Shriroop Joshi",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "errorhandler": "^1.5.0",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "morgan": "^1.9.0"
+  }
+}
