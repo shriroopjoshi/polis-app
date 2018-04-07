@@ -3,15 +3,15 @@
 var express = require('express'),
     session = require('express-session'),
     errorhandler = require('errorhandler'),
-    bodyParser = require('body-parser'),
+    //bodyParser = require('body-parser'),
     cors = require('cors');
 
 var app = express();
 app.use(cors());
 
 app.use(require('morgan')('dev'));
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
+app.use(express.json());
+app.use(express.urlencoded({extended: true}));
 
 app.use(session({
     secret: 'some-secret',
@@ -20,6 +20,8 @@ app.use(session({
     saveUninitialized: false
 }));
 app.use(errorhandler());
+
+var db = require('./db/db');
 
 var routes = require('./src/routes');
 app.use('/', routes);
