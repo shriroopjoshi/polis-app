@@ -5,5 +5,6 @@ var router = require('express').Router();
 router.use('/auth', require('./auth'));
 router.use('/source', require('./source'));
 router.use('/newssource', require('./newssource'));
+router.use('/save', require('./save'));
 
 module.exports = router;
